@@ -1,3 +1,5 @@
+
+
 import sade from 'sade';
 import * as pkg from '../package.json';
 
@@ -16,8 +18,9 @@ prog
 	.option('--generate', 'Change generate format between `dom` and `ssr`')
 	.option('--no-css', `Don't include CSS (useful with SSR)`)
 	.option('--immutable', 'Support immutable data structures')
+	.option('-w, --watch', 'watch for changes and compile as needed')
 
-	.example('compile App.html > App.js')
+	.example('compile App.Svelte > App.js')
 	.example('compile src -o dest')
 	.example('compile -f umd MyComponent.html > MyComponent.js')
 

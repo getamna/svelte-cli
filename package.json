@@ -1,10 +1,13 @@
 {
-  "name": "svelte-cli-new",
-  "version": "3.0.0",
+  "name": "svelte-cli2",
+  "version": "4.0.1",
   "description": "Command line interface for Svelte",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bin": {
-    "svelte": "bin.js"
+    "svelte": "dist/index.js"
   },
   "files": [
     "README.md",
@@ -51,5 +54,8 @@
     "sade": "^1.4.0",
     "sander": "^0.6.0",
     "tiny-glob": "^0.2.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

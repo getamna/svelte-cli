@@ -1,6 +1,8 @@
 import * as path from 'path';
 import * as fs from 'fs';
-import * as svelte from 'svelte';
+const svelte = require( 'svelte/compiler');
+
+
 import error from './error.js';
 
 function mkdirp(dir) {
@@ -42,14 +44,11 @@ export async function compile(input, opts) {
 	const options = {
 		name: opts.name,
 		format: opts.format,
-		sourceMap: opts.sourcemap,
-		globals,
 		css: opts.css !== false,
 		dev: opts.dev,
 		immutable: opts.immutable,
 		generate: opts.generate || 'dom',
 		customElement: opts.customElement,
-		store: opts.store
 	};
 
 	if (isDir) {
