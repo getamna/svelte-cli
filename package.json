@@ -1,5 +1,5 @@
 {
-  "name": "svelte-cli",
+  "name": "svelte-cli-new",
   "version": "3.0.0",
   "description": "Command line interface for Svelte",
   "main": "index.js",
@@ -36,7 +36,7 @@
     "node": ">=7.6.0"
   },
   "dependencies": {
-    "svelte": "^2.1.0"
+    "svelte": "^3.0.0"
   },
   "devDependencies": {
     "clorox": "^1.0.3",
